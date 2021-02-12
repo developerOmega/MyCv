@@ -12,7 +12,7 @@ const MainLayout = ( {children} ) => {
       </header>
 
       <div className="slider">
-        <Image src="https://picsum.photos/200/300.webp"  layout="responsive" height="100%" width="100%" />
+        {/* <Image src="https://picsum.photos/200/300.webp"  layout="responsive" height="100%" width="100%" /> */}
       </div>
 
       { children }

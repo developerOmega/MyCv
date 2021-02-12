@@ -12,7 +12,9 @@ const MainLayout = ( {children, user} ) => {
       </header>
 
       <div className="slider">
-        <Image src={user.main_img}  layout="responsive" height="100%" width="100%" />
+        <div className="img">
+          <Image src={user.main_img}  layout="responsive" height="100%" width="100%" />
+        </div>
       </div>
 
       <section className="content">

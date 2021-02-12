@@ -20,7 +20,7 @@
 
 .header, .footer{
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: $white;
   background: $black;
 }
@@ -47,3 +47,5 @@ footer.footer {
     }
   }
 }
+
+@import './components/slider.scss';

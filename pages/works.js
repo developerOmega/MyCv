@@ -13,22 +13,21 @@ const Works = ( {user, projects, jobs, skills} ) => {
   const getSkill = skills.map((skill) => <CardSkill skill={skill} key={skill.id} />)
 
   return (
+    
     <NavUser user={user}>
-      <section className="content">
         
-        <div className="main">
-          { getProjects }
-        </div>
+      <div className="main">
+        { getProjects }
+      </div>
 
-        <div className="menu1">
-          { getJobs }
-        </div>
+      <div className="menu1">
+        { getJobs }
+      </div>
 
-        <div className="menu2">
-          { getSkill }
-        </div>
+      <div className="menu2">
+        { getSkill }
+      </div>
 
-      </section>
     </NavUser>
   )
 }

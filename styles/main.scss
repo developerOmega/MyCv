@@ -1,4 +1,49 @@
 @import './var.scss';
 
-body {
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Questrial', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  margin:auto;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:  "header"
+                        "slider"
+                        "content"
+                        "footer";
+}
+
+.header, .footer{
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: $white;
+  background: $black;
+}
+
+header.header{
+  .logo{
+    text-align: center;
+  }
+}
+
+footer.footer {
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+  justify-items: center;
+
+  .info {
+    .primary{
+      font-size: 1.4rem;
+    }
+    .second{
+      font-size: 1rem;
+    }
+  }
 }

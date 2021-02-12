@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const MainLayout = ( {children} ) => {
+const MainLayout = ( {children, user} ) => {
   return (
     <div className="main">
 
@@ -12,7 +12,7 @@ const MainLayout = ( {children} ) => {
       </header>
 
       <div className="slider">
-        {/* <Image src="https://picsum.photos/200/300.webp"  layout="responsive" height="100%" width="100%" /> */}
+        <Image src={user.main_img}  layout="responsive" height="100%" width="100%" />
       </div>
 
       { children }

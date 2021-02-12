@@ -1,14 +1,21 @@
-import React from 'react';
+import { useRouter } from 'next/router';
 import '../styles/main.scss';
 import Head from 'next/head';
+import { getReq } from '../config/axios';
+import { url, id } from '../config/config';
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  if(router.isFallback) {
+    return <h1>Loading ...</h1>
+  }
 
   const Layout = Component.Layout ? Component.Layout : React.Fragment;
 
   return (
 
-    <Layout>
+    <Layout user={pageProps.user}>
 
       <Head>
         <title> MyCv </title>

@@ -10,13 +10,17 @@ const NavUser = (props) => {
   return (
 
     <>
-      <nav className="nav">
-        
+
+      <div className="head">
         <CardProfile 
           name={user.first_name + " " + user.last_name} 
           email={user.email}
           img={user.img}
         />
+      </div>
+
+      <nav className="nav">
+        
 
         <div className="options">
           <Link href="/">

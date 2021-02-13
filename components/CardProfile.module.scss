@@ -1,8 +1,24 @@
-.perfil {  
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: orange;
+@import '../styles/var.scss';
 
+.perfil {  
+  max-width: 30rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  & > div{
+    img{
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
 }
 
+.main{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.second {
+  color: $black-second;
+}

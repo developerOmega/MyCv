@@ -5,11 +5,11 @@ import { url, id } from '../config/config';
 
 const Home = ({user}) => {
   return (
-    <div>
-      <NavUser user={user} >
-        <div> {user.description} </div>
-      </NavUser>
-    </div>
+    <NavUser user={user} >
+      <div className="main"> 
+        {user.description} 
+      </div>
+    </NavUser>
   )
 }
 

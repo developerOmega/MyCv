@@ -15,19 +15,19 @@ const Works = ( {user, projects, jobs, skills} ) => {
   return (
     
     <NavUser user={user}>
-        
-      <div className="main">
-        { getProjects }
-      </div>
+      <div classNam="main">
+        <div className="card1">
+          { getProjects }
+        </div>
 
-      <div className="menu1">
-        { getJobs }
-      </div>
+        <div className="card2">
+          { getJobs }
+        </div>
 
-      <div className="menu2">
-        { getSkill }
+        <div className="card3">
+          { getSkill }
+        </div>
       </div>
-
     </NavUser>
   )
 }

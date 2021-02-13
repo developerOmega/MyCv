@@ -7,15 +7,18 @@
   box-sizing: border-box;
 }
 
-.container {
+.init {
   margin:auto;
   display: grid;
   gap: 2rem;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
   grid-template-areas:  "header"
-                        "slider"
-                        "content"
+                        "container"
                         "footer";
+}
+
+.container {
+  padding: 10px;
 }
 
 .header, .footer{

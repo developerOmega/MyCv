@@ -1,6 +1,8 @@
 .content{
   background: $back;
   max-width: 900px;
+  min-width: 100px;
+  padding: 10px;
   width: 100%;
   margin: auto;
   border-radius: 10px;
@@ -11,10 +13,12 @@
   box-shadow: 1px 2px 5px rgba($black, .5);
   -webkit-box-shadow: 1px 2px 5px rgba($black, .5);
   -moz-box-shadow: 1px 2px 5px rgba($black, .5);
+
+  display: grid;
+  grid-template-areas: "head" "nav" "main";
 }
 
-.nav {
-  .perfil {
-    padding: 2rem;
-  }
+.head {
+  // background: orange;
+  padding: 2rem;
 }

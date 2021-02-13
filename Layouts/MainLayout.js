@@ -3,7 +3,7 @@ import IMG from '../components/IMG';
 
 const MainLayout = ( {children, user} ) => {
   return (
-    <div className="container">
+    <div className="init">
 
       <header className="header">
         <div className="logo">
@@ -11,15 +11,17 @@ const MainLayout = ( {children, user} ) => {
         </div>
       </header>
 
-      <div className="slider">
-        <div className="img">
-          <IMG img={user.main_img} height="50" />
+      <div className="container">
+        <div className="slider">
+          <div className="img">
+            <IMG img={user.main_img} height="50" />
+          </div>
         </div>
-      </div>
 
-      <section className="content">
-        { children }
-      </section>
+        <section className="content">
+          { children }
+        </section>
+      </div>
 
       <footer className="footer">
         <div className="logo">

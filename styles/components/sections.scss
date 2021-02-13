@@ -1,0 +1,20 @@
+.content{
+  background: $back;
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+
+  position: relative;
+  bottom: 15rem;
+
+  box-shadow: 1px 2px 5px rgba($black, .5);
+  -webkit-box-shadow: 1px 2px 5px rgba($black, .5);
+  -moz-box-shadow: 1px 2px 5px rgba($black, .5);
+}
+
+.nav {
+  .perfil {
+    padding: 2rem;
+  }
+}

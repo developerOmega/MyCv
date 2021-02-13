@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import IMG from '../components/IMG';
 
 const MainLayout = ( {children, user} ) => {
   return (
@@ -13,7 +13,7 @@ const MainLayout = ( {children, user} ) => {
 
       <div className="slider">
         <div className="img">
-          <Image src={user.main_img}  layout="responsive" height="100%" width="100%" />
+          <IMG img={user.main_img} height="50" />
         </div>
       </div>
 

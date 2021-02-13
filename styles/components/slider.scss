@@ -1,6 +1,10 @@
 .slider{
   & > div{
-    max-width: 1200px ;
+    max-width: 1200px;
     margin:0 auto;
+    img{
+      border-radius: 10px;
+      object-fit: cover;
+    }
   }
 }

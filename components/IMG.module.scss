@@ -1,0 +1,7 @@
+.img {
+  & > div{
+    img{
+      object-fit: cover !important;
+    } 
+  }
+}

@@ -1,0 +1,16 @@
+.nav {
+  background: $blue;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  a.option {
+    align-self: stretch;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: $white;
+    &:hover{
+      background: $blue-second;
+    }
+  }
+}

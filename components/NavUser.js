@@ -21,20 +21,17 @@ const NavUser = (props) => {
 
       <nav className="nav">
         
+        <Link href="/">
+          <a className="option"> Hello </a>
+        </Link>
 
-        <div className="options">
-          <Link href="/">
-            <a className="option"> Hello </a>
-          </Link>
-
-          <Link href="/works">
-            <a className="option"> Work </a>
-          </Link>
-
-          <Link href="/contact">
-            <a className="option"> Contact </a>
-          </Link>
-        </div>
+        <Link href="/works">
+          <a className="option"> Work </a>
+        </Link>
+        
+        <Link href="/contact">
+          <a className="option"> Contact </a>
+        </Link>
 
       </nav>
 

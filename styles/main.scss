@@ -18,7 +18,8 @@
 }
 
 .container {
-  padding: 10px;
+  position: relative;
+  grid-area: container;
 }
 
 .header, .footer{
@@ -29,12 +30,14 @@
 }
 
 header.header{
+  grid-area: header;
   .logo{
     text-align: center;
   }
 }
 
 footer.footer {
+  grid-area: footer;
   padding: 10rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -53,3 +56,4 @@ footer.footer {
 
 @import './components/slider.scss';
 @import './components/sections.scss';
+@import './components/nav.scss';

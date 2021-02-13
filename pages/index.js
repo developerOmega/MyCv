@@ -6,8 +6,10 @@ import { url, id } from '../config/config';
 const Home = ({user}) => {
   return (
     <NavUser user={user} >
-      <div className="main"> 
-        {user.description} 
+      <div className="main">
+        <div className="section">
+          {user.description} 
+        </div>
       </div>
     </NavUser>
   )

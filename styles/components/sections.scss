@@ -2,23 +2,32 @@
   background: $back;
   max-width: 900px;
   min-width: 100px;
-  padding: 10px;
   width: 100%;
+  min-height: 800px; 
   margin: auto;
   border-radius: 10px;
-
+  
   position: relative;
-  bottom: 15rem;
+  bottom: 10rem;
+  margin-bottom: -10rem;
 
   box-shadow: 1px 2px 5px rgba($black, .5);
   -webkit-box-shadow: 1px 2px 5px rgba($black, .5);
   -moz-box-shadow: 1px 2px 5px rgba($black, .5);
 
   display: grid;
+  grid-template-rows: auto auto 1fr;
   grid-template-areas: "head" "nav" "main";
 }
 
+.main {
+  padding: 4rem 2rem;
+  .section {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
 .head {
-  // background: orange;
   padding: 2rem;
 }

@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }) {
 
       <Head>
         <title> MyCv </title>
+        <script src="https://kit.fontawesome.com/3a06726ffc.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet" />
       </Head>

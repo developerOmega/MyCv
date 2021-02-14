@@ -1,12 +1,13 @@
 import React from 'react';
+import ButtonLink from './ButtonLink';
 
 const CardSkill = ( {skill} ) => {
 
   return (
-    <div>
+    <ButtonLink>
       <div> {skill.icon} </div>
       <div> {skill.name} </div>
-    </div>
+    </ButtonLink>
   )
 
 }

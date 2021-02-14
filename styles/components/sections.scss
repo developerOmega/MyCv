@@ -28,6 +28,36 @@
   }
 }
 
+.main-work{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "card-1    card-2"
+                       "card-1    card-3";
+
+  .card-1{
+    grid-area: card-1;
+  }
+
+  .card-2{
+    grid-area: card-2;
+    background: $blue-second;
+    padding: 20px 0;
+  }
+
+  .card-3 {
+    grid-area: card-3;
+    background: $blue-second;
+    border-bottom-right-radius: 10px;
+    padding: 20px 0;
+
+  }
+
+  .title {
+    text-align: center;
+    color: $white;
+  }
+}
+
 .head {
   padding: 2rem;
 }

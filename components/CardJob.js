@@ -1,11 +1,12 @@
 import React from 'react';
+import ButtonLink from './ButtonLink';
 
 const CardJob = ( {job} ) => {
 
   return (
-    <div>
+    <ButtonLink>
       <div> {job.company} </div>
-    </div>
+    </ButtonLink>
   )
 
 }

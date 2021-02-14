@@ -1,0 +1,9 @@
+@import '../styles/var.scss';
+
+.button{
+  background: $blue-third;
+  padding: .6rem;
+  margin: 1rem;
+  color: $white;
+  border-radius: 10px;
+}

@@ -1,0 +1,54 @@
+@import '../styles/var.scss';
+
+.card {
+  background: $blue-third;
+  color: $white;
+  margin: 2rem 1rem;
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.gridOptions {
+  padding: 1rem;
+  grid-template-areas: "main-content    image"
+                       "main-content    buttons"
+}
+
+.grid {
+  padding: 1rem;
+  grid-template-areas: "main-content   image";
+}
+
+.none {
+  display: none;
+}
+
+
+.mainContent {
+  grid-area: main-content;
+}
+
+.imgContent {
+  grid-area: image;
+  & > div{
+    img{
+      border-radius: 10px;
+    }
+  }
+}
+
+.buttonContent {
+  grid-area: buttons;
+  padding: 1rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+

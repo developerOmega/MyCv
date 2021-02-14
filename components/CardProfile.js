@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './CardProfile.module.scss';
-import IMG from './IMG';
+import IMG from './tags/IMG';
 
 const CardProfile = ( {img, name, email} ) => {
   return (

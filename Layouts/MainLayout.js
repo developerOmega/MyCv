@@ -1,5 +1,5 @@
 import React from 'react';
-import IMG from '../components/IMG';
+import IMG from '../components/tags/IMG';
 
 const MainLayout = ( {children, user} ) => {
   return (

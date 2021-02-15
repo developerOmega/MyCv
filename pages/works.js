@@ -3,6 +3,7 @@ import NavUser from '../components/NavUser';
 import CardProject from '../components/CardProject';
 import CardJob from '../components/CardJob';
 import CardSkill from '../components/CardSkill';
+import CardJobShow from '../components/CardJobShow';
 import { getReq } from '../config/axios';
 import { url, id } from '../config/config';
 
@@ -15,6 +16,7 @@ const Works = ( {user, projects, jobs, skills} ) => {
   return (
     
     <NavUser user={user}>
+      <CardJobShow />
       <div className="main-work">
         <div className="card-1">
           { getProjects }

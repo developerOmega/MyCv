@@ -19,6 +19,16 @@
 
 }
 
+.difuminated{
+  display: block;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    color: $blue;
+  }
+}
+
 .danger {
   background: $danger;
   &:hover {

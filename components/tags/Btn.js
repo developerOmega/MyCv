@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Btn.module.scss';
 
-const Btn = ( {children ,type="submit", color="main", style="button"} ) => {
+const Btn = ( {children ,type="submit", color="main", style="button", onClick= () => {return}} ) => {
 
   const styleColor = color == 'main' ?  styles.button + " " + styles.main : styles.button + " " + styles.danger;
   let styleContent = styleColor;
@@ -15,7 +15,7 @@ const Btn = ( {children ,type="submit", color="main", style="button"} ) => {
   }
 
   return (
-    <button type={type} className={styleContent}>
+    <button type={type} className={styleContent} onClick={onClick}>
       {children}
     </button>
   )

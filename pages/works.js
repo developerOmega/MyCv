@@ -16,7 +16,7 @@ const Works = ( {user, projects, jobs, skills} ) => {
   return (
     
     <NavUser user={user}>
-      <CardJobShow />
+      {/* <CardJobShow /> */}
       <div className="main-work">
         <div className="card-1">
           { getProjects }

@@ -1,12 +1,12 @@
 import React from 'react';
-import ButtonLink from './tags/ButtonLink';
+import Badge from './tags/Badge';
 
 const CardJob = ( {job} ) => {
 
   return (
-    <ButtonLink>
+    <Badge>
       <div> {job.company} </div>
-    </ButtonLink>
+    </Badge>
   )
 
 }

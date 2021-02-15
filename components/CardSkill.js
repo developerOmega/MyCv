@@ -1,13 +1,17 @@
 import React from 'react';
-import ButtonLink from './tags/ButtonLink';
+import TextFlex from './flex/TextFlex';
+import Badge from './tags/Badge';
+import Icon from './tags/Icon';
 
 const CardSkill = ( {skill} ) => {
 
   return (
-    <ButtonLink>
-      <div> {skill.icon} </div>
-      <div> {skill.name} </div>
-    </ButtonLink>
+    <Badge>
+      <TextFlex>
+        <Icon fill="#fff" icon={skill.icon} />
+        <div> {skill.name} </div>
+      </TextFlex>
+    </Badge>
   )
 
 }

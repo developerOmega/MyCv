@@ -1,0 +1,9 @@
+@import '../../styles/var.scss';
+
+.link {
+  text-decoration: none;
+  color: $blue;
+  &:hover {
+    color: $blue-third;
+  }
+}

@@ -1,3 +1,4 @@
+import React from 'react';
 import { useRouter } from 'next/router';
 import '../styles/main.scss';
 import Head from 'next/head';
@@ -6,7 +7,6 @@ import { url, id } from '../config/config';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-
   if(router.isFallback) {
     return <h1>Loading ...</h1>
   }
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
 
-    <Layout user={pageProps.user}>
+    <Layout user={pageProps.user} project={pageProps.project}>
 
       <Head>
         <title> MyCv </title>

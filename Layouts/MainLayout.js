@@ -1,7 +1,7 @@
 import React from 'react';
 import IMG from '../components/tags/IMG';
 
-const MainLayout = ( {children, user} ) => {
+const MainLayout = ( {children, user, project} ) => {
   return (
     <div className="init">
 
@@ -14,7 +14,7 @@ const MainLayout = ( {children, user} ) => {
       <div className="container">
         <div className="slider">
           <div className="img">
-            <IMG img={user.main_img} height="50" />
+            <IMG img={ user ? user.main_img : project.img} height="50" />
           </div>
         </div>
 

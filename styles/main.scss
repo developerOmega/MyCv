@@ -22,10 +22,6 @@
   grid-area: container;
 }
 
-// h1, h2 ,p, h3{
-//   color: $black;
-// }
-
 .header, .footer{
   padding: 1rem;
   font-size: 2rem;
@@ -61,3 +57,4 @@ footer.footer {
 @import './components/slider.scss';
 @import './components/sections.scss';
 @import './components/nav.scss';
+@import './components/colors.scss';

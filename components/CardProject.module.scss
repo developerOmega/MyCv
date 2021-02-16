@@ -5,6 +5,8 @@
   color: $white;
   margin: 2rem 1rem;
   border-radius: 10px;
+  max-height: 250px;
+  transition: ease .5s all;
 
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -12,18 +14,30 @@
 }
 
 .gridOptions {
-  padding: 1rem;
+  padding: 1rem;  
+  grid-row: span 2;
+  max-height: 100%;
+
   grid-template-areas: "main-content    image"
-                       "main-content    buttons"
+                       "main-content    buttons";
 }
 
+
 .grid {
-  padding: 1rem;
+  padding: 0 0 0 1rem;
   grid-template-areas: "main-content   image";
+
+  cursor: pointer;
+  &:hover {
+    transition: ease .3s all;
+    background: $blue-second;
+    padding: 1rem;
+  }
 }
 
 .none {
   display: none;
+
 }
 
 

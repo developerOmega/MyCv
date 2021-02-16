@@ -72,6 +72,10 @@
 
   .card-1{
     grid-area: card-1;
+    display: grid;
+    // grid-template-rows: repeat( auto-fit, minmax(100px, 600px) );
+    grid-auto-rows: minmax(100px, auto);
+
   }
 
   .card-2{

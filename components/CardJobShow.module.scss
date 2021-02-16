@@ -18,13 +18,14 @@
 }
 
 .card{
+  position: relative;
 
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 
   background: $back;
   min-width: 30rem;
-  max-width: 60rem;
+  max-width: 50rem;
   height: auto;
   padding: 2rem;
 
@@ -32,6 +33,32 @@
   box-shadow: 1px 2px 5px rgba($black, .5);
   -webkit-box-shadow: 1px 2px 5px rgba($black, .5);
   -moz-box-shadow: 1px 2px 5px rgba($black, .5);
+}
+
+.open {
+  animation: cardopen .7s;
+}
+
+.close {
+  animation: cardclose .7s;
+}
+
+@keyframes cardopen {
+  0% {
+    bottom: 100%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes cardclose {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 100%;
+  }
 }
 
 .btn {
@@ -47,7 +74,7 @@
 }
 
 .main {
-  padding-top: 4rem;
+  padding: 4rem 0;
 }
 
 .content {

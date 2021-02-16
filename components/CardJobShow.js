@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './CardJobShow.module.scss';
 import JustContent from './flex/JustContent';
 import Close from './icons/Close';
@@ -8,21 +8,31 @@ import moment from 'moment';
 
 const CardJobShow = ({view = () => {return}, job = {}}) => {
 
+  const [exit, setExit] = useState(false);
+
   const flex = {
     display: 'flex',
     alignItems: "flex-start",
     justifyContent: "center",
   }
+  
+  let styleCard = styles.card + " ";
+  styleCard += exit ? styles.close : styles.open; 
 
+  const exitCard = () => {
+    setExit(true);
+    setTimeout(() => view(),  450);
+  };
+  
   const getTime = ( time ) => moment.utc( time ).format('DD-MM-YYYY');
 
   return (
     <Screen style={flex}>
       
-      <div className={styles.card}>
+      <div className={styleCard}>
         
         <JustContent type="flex-end">
-          <Btn type="button" style="none" onClick={view} >
+          <Btn type="button" style="none" onClick={exitCard} >
             <Close width="15px" className={styles.btn} />
           </Btn>
         </JustContent>

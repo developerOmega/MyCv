@@ -18,6 +18,23 @@
   display: grid;
   grid-template-rows: auto auto 1fr;
   grid-template-areas: "head" "nav" "main";
+
+  animation: bottomdif 1s;
+}
+
+
+@keyframes bottomdif {
+  0% {
+    filter: opacity(0%);
+    filter: blur(10px);
+    bottom: 0rem;
+  }
+
+  100% {
+    filter: opacity(99%);
+    filter: blur(.5px);
+    bottom: 10rem;
+  }
 }
 
 .main {

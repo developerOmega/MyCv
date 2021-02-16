@@ -1,5 +1,7 @@
 .slider{
-
+  animation: topdif 1s ease;
+  position: relative;
+  top: 0;
   & > div{
     max-width: 1200px;
     margin:0 auto;
@@ -7,5 +9,21 @@
       border-radius: 10px;
       object-fit: cover;
     }
+  }
+}
+
+
+@keyframes topdif {
+  0% {
+    filter: opacity(0%);
+    filter: blur(10px);
+    top: 40px;
+  }
+
+
+  100% {
+    filter: opacity(99%);
+    filter: blur(.5px);
+    top: 0px;
   }
 }

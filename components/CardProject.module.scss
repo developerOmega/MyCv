@@ -5,7 +5,7 @@
   color: $white;
   margin: 2rem 1rem;
   border-radius: 10px;
-  max-height: 250px;
+  max-height: 350px;
   transition: ease .5s all;
 
   display: grid;
@@ -66,3 +66,27 @@
   font-weight: 700;
 }
 
+
+@media screen and (max-width: 460px) {
+  .card {
+    max-height: 100%;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .grid{
+    grid-template-areas: "main-content" "image" ;
+  }
+
+  .gridOptions {
+    grid-template-areas: "main-content" "image"  "buttons";
+  }
+
+  .imgContent {
+    padding: 1rem 0;
+  }
+
+  .title {
+    text-align: center;
+  }
+}

@@ -27,3 +27,10 @@
     top: 0px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .slider {
+    animation: none;
+    display: none;
+  }
+}

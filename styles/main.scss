@@ -8,6 +8,7 @@
 }
 
 .init {
+  width: 100%;
   margin:auto;
   display: grid;
   gap: 2rem;
@@ -54,6 +55,15 @@ footer.footer {
       font-size: 1rem;
     }
   }
+}
+
+@media screen and (max-width: 600px){
+  footer.footer {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 5rem;
+    align-items: center;
+  }
+
 }
 
 @import './components/slider.scss';

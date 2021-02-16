@@ -101,3 +101,22 @@
 .head {
   padding: 2rem;
 }
+
+@media screen and (max-width: 600px){
+  .main-work{
+    grid-template-columns: 1fr;
+    grid-template-areas: "card-1";
+    .card-2, .card-3{
+      display: none;
+    }
+  }
+
+  .content {
+    animation: none;
+    max-width: 400px;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 95%;
+  }
+
+}

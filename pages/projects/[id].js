@@ -6,14 +6,18 @@ import Title from '../../components/tags/Title';
 import Link from '../../components/tags/Link';
 import JustContent from '../../components/flex/JustContent';
 import CardSkillProjects from '../../components/CardSkillProject';
+import CardSection from '../../components/CardSection';
+import BtnLink from '../../components/tags/BtnLink';
+import Left from '../../components/icons/Left';
 
 const Project = ({project, skills, sections}) => {
   const router = useRouter();
-  const { id } = router.query;
 
   if(router.isFallback) {
     return <h1>Loading...</h1>
-  }  
+  }
+  
+  const getSection = sections.map( section => <CardSection key={section.id} section={section} /> );
 
   return (
     <div className="main-article">
@@ -27,6 +31,18 @@ const Project = ({project, skills, sections}) => {
       </JustContent>
 
       <CardSkillProjects skills={skills} />
+
+      { getSection }
+
+      <JustContent>
+        <div style={{ marginLeft: "2rem" }}>
+          <BtnLink href="/works" auto={true}>
+            <Left width="20px" />
+            Back
+          </BtnLink>
+        </div>
+      </JustContent>
+
     </div>
 
   );

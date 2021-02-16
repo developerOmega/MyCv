@@ -1,9 +1,12 @@
 @import '../../styles/var.scss';
 
 .button {
-  display: block;
+  display: flex;
+  align-items: center;
+  fill: $white;
   text-decoration: none;
   text-align: center;
+
   font-size: 16px;
   padding: 10px;
   width: 100%;
@@ -17,6 +20,10 @@
     transition: ease .3s all;
   }
 
+}
+
+.widthAuto{
+  width: auto;
 }
 
 .difuminated{

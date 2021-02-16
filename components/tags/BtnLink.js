@@ -2,9 +2,13 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './Btn.module.scss';
 
-const BtnLink = ( {children, href="#", color="main"} ) => {
+const BtnLink = ( {children, href="#", color="main", auto=false} ) => {
 
-  const style = color == 'main' ? styles.main : styles.danger; 
+  let style = color == 'main' ? styles.main : styles.danger;
+  
+  if(auto){
+    style += " " + styles.widthAuto;
+  }
 
   return (
     <Link href={href}>

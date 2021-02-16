@@ -6,7 +6,7 @@ import Right from './icons/Right';
 import Left from './icons/Left';
 
 const CardSkillProjects = ({skills}) => {
-  const getSkill = skills.map( skill => <Icon fill="#fff" width="50px" icon={skill.icon} />  );
+  const getSkill = skills.map( skill => <Icon key={skill.id} fill="#fff" width="50px" icon={skill.icon} />  );
 
   return (
     <div className={styles.card}>

@@ -4,6 +4,10 @@ import CardProject from '../components/CardProject';
 import CardJob from '../components/CardJob';
 import CardSkill from '../components/CardSkill';
 import CardJobShow from '../components/CardJobShow';
+import MenuResp from '../components/MenuResp';
+import Menu from '../components/icons/Menu';
+import Btn from '../components/tags/Btn';
+import JustContent from '../components/flex/JustContent';
 import { getReq } from '../config/axios';
 import { url, id } from '../config/config';
 
@@ -13,6 +17,7 @@ const Works = ( {user, projects, jobs, skills} ) => {
 
   const [jobInfo, setJobInfo] = useState(false);
   const [job, setJob] = useState({});
+  const [resp, setResp] = useState(false);
 
   const viewJob = ( data ) => {
     setJobInfo(true);
@@ -31,9 +36,19 @@ const Works = ( {user, projects, jobs, skills} ) => {
     
     <NavUser user={user}>
 
+      { resp ? <MenuResp jobs={getJobs} skills={getSkill}  /> : <></>}
+
       { jobInfo ? <CardJobShow view={ outJobInfo } job={job} /> : null }
 
+      <JustContent type="flex-end" className="position-sticky" >  
+        <Btn type="button" style="menu">
+          <Menu />
+        </Btn>
+      </JustContent>
+
       <div className="main-work">
+
+
         <div className="card-1">
           { getProjects }
         </div>

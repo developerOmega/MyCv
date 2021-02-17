@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './JustContent.module.scss';
 
-const JustContent = ({ children, type = 'flex-start'}) => {
+const JustContent = ({ children, type = 'flex-start', className=""}) => {
 
-  let style = styles.flex;
-
+  let style = styles.flex + " " + className;
+ 
   switch(type){
     case 'flex-end':
       style += " " + styles.end;

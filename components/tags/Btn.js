@@ -10,6 +10,8 @@ const Btn = ( {children ,type="submit", color="main", style="button", onClick= (
     case "none":
       styleContent = styles.difuminated;
       break;
+    case "menu":
+      styleContent += " " + styles.menu;
     default:
       styleContent = styleContent;
   }

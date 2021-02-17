@@ -9,7 +9,7 @@
 
   font-size: 16px;
   padding: 10px;
-  width: 100%;
+  // width: 100%;
   border: 0;
   border-radius: 5px;
   color: $white;
@@ -24,6 +24,13 @@
 
 .widthAuto{
   width: auto;
+}
+
+.menu {
+  width: 5rem;
+  display: block;
+  border-radius: 0;
+  border-bottom-left-radius: 10px;
 }
 
 .difuminated{

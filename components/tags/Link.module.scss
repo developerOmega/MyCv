@@ -3,7 +3,12 @@
 .link {
   text-decoration: none;
   color: $blue;
+  fill: $blue;
+  display: flex;
+  align-items: center;
   &:hover {
     color: $blue-third;
+    fill: $blue-third;
+
   }
 }

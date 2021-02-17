@@ -9,18 +9,8 @@ const CardSkillProjects = ({skills}) => {
   const getSkill = skills.map( skill => <Icon key={skill.id} fill="#fff" width="50px" icon={skill.icon} />  );
 
   return (
-    <div className={styles.card}>
-      <Btn type="button" style="none">
-        <Left width="40px" />
-      </Btn>
-      
-      <div className={styles.content}>
-        {getSkill}
-      </div>
-      
-      <Btn type="button" style="none">
-        <Right width="40px" />
-      </Btn>
+    <div className={styles.card}>  
+      {getSkill}
     </div>
   );
 

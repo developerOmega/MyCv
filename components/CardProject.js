@@ -17,8 +17,6 @@ const CardProject = ( {project} ) => {
       return;
     }
     setActive(true)
-    // setTimeout(() => , 500 )
-    
   };
 
   const closeOp = () => {

@@ -3,15 +3,13 @@
 .card{
   background: $blue;
   padding: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
   fill: $white;
-  
-  justify-content: space-evenly;
-  align-content: center;
 
-  .content{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax( 100px, 1fr ));
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax( 100px, 1fr ));
+
+  svg {
+    margin: auto;
   }
 }

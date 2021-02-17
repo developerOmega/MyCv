@@ -7,7 +7,6 @@ import Link from '../../components/tags/Link';
 import JustContent from '../../components/flex/JustContent';
 import CardSkillProjects from '../../components/CardSkillProject';
 import CardSection from '../../components/CardSection';
-import BtnLink from '../../components/tags/BtnLink';
 import Left from '../../components/icons/Left';
 
 const Project = ({project, skills, sections}) => {
@@ -36,10 +35,10 @@ const Project = ({project, skills, sections}) => {
 
       <JustContent>
         <div style={{ marginLeft: "2rem" }}>
-          <BtnLink href="/works" auto={true}>
-            <Left width="20px" />
-            Back
-          </BtnLink>
+          <Link href="/works" auto={true} target="_self">
+            <Left width="15px" /> 
+            <p style={{ marginLeft: ".5rem" }}> Back </p>
+          </Link>
         </div>
       </JustContent>
 

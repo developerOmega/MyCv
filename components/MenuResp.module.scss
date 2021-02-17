@@ -4,8 +4,15 @@
   color: $white;
   background: $blue-second;
   padding: 20px 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .title {
   text-align: center;
+}
+
+.btn {
+  fill: $white;
+  margin-right: 10px;
 }

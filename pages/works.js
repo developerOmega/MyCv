@@ -28,6 +28,14 @@ const Works = ( {user, projects, jobs, skills} ) => {
     setJobInfo(false);
   }
 
+  const openResp = () =>{
+    setResp(true);
+  }
+
+  const closeResp = () =>{
+    setResp(false);
+  }
+
   const getProjects = projects.map( (project) => <CardProject project={project} key={project.id}/> );
   const getSkill = skills.map((skill) => <CardSkill skill={skill} key={skill.id} />); 
   const getJobs = jobs.map((job) => <CardJob job={job} key={job.id} func={ viewJob }  />);
@@ -36,15 +44,22 @@ const Works = ( {user, projects, jobs, skills} ) => {
     
     <NavUser user={user}>
 
-      { resp ? <MenuResp jobs={getJobs} skills={getSkill}  /> : <></>}
+      { resp ? <MenuResp jobs={getJobs} skills={getSkill} className="position-sticky" func={closeResp} /> : <></>}
 
       { jobInfo ? <CardJobShow view={ outJobInfo } job={job} /> : null }
 
-      <JustContent type="flex-end" className="position-sticky" >  
-        <Btn type="button" style="menu">
-          <Menu />
-        </Btn>
-      </JustContent>
+      {
+        !resp ? (
+          <JustContent type="flex-end" className="position-sticky" >  
+            <Btn type="button" style="menu" onClick={openResp}>
+              <Menu />
+            </Btn>
+          </JustContent>
+        ) : (
+          <></>
+        )
+      }
+
 
       <div className="main-work">
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './MenuResp.module.scss';
 import Close from './icons/Close';
 import JustContent from './flex/JustContent';
@@ -6,24 +6,32 @@ import Btn from './tags/Btn';
 
 const MenuResp = ({ jobs, skills, className="", func= () => {return} }) => {
 
-  const exitMenu = () => func();
+  const [exit, setExit] = useState(false);
+
+  let style = styles.cards + " ";
+  style += exit ? styles.close : styles.open;
+
+  const exitMenu = () => {
+    setExit(true);
+    setTimeout( () => func(), 600 );
+  };
 
   return (
-    <div className={ styles.cards + " " + className }>
+    <div className={ style + " " + className }>
       <JustContent type="flex-end">
         <Btn type="button" style="none" onClick={exitMenu} >
           <Close width="15px" className={styles.btn} />
         </Btn>
       </JustContent>
 
-      <div className="card-2">
+      <div>
         <div className={styles.title}>
           Jobs
         </div>
         { jobs }
       </div>
 
-      <div className="card-3">
+      <div>
         <div className={styles.title}>
           Skills
         </div>

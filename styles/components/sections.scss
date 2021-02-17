@@ -103,6 +103,10 @@
   padding: 2rem;
 }
 
+.resp {
+  display: none !important;
+}
+
 @media screen and (max-width: 600px){
   .main-work{
     grid-template-columns: 1fr;
@@ -117,6 +121,10 @@
     bottom: 0;
     margin-bottom: 0;
     width: 95%;
+  }
+
+  .resp {
+    display: flex !important;
   }
 
 }

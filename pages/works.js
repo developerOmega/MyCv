@@ -44,25 +44,25 @@ const Works = ( {user, projects, jobs, skills} ) => {
     
     <NavUser user={user}>
 
-      { resp ? <MenuResp jobs={getJobs} skills={getSkill} className="position-sticky" func={closeResp} /> : <></>}
 
       { jobInfo ? <CardJobShow view={ outJobInfo } job={job} /> : null }
 
+
       {
         !resp ? (
-          <JustContent type="flex-end" className="position-sticky" >  
+          <JustContent type="flex-end" className="position-sticky resp" >  
             <Btn type="button" style="menu" onClick={openResp}>
               <Menu />
             </Btn>
           </JustContent>
         ) : (
           <></>
-        )
-      }
-
+          )
+        }
 
       <div className="main-work">
 
+        { resp ? <MenuResp jobs={getJobs} skills={getSkill} className="position-sticky" func={closeResp} /> : <></>}
 
         <div className="card-1">
           { getProjects }

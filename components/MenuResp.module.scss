@@ -6,6 +6,18 @@
   padding: 20px 0;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  height: 100vh;
+
+  bottom: 0;
+
+}
+
+.open {
+  animation: openMenu .7s;
+}
+
+.close {
+  animation: closeMenu .7s;
 }
 
 .title {
@@ -15,4 +27,22 @@
 .btn {
   fill: $white;
   margin-right: 10px;
+}
+
+@keyframes openMenu {
+  0% {
+    bottom: -100vh;
+  }
+  100% {
+    bottom: 0vh;
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -100vh;
+  }
 }

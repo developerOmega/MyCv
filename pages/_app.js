@@ -2,8 +2,6 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import '../styles/main.scss';
 import Head from 'next/head';
-import { getReq } from '../config/axios';
-import { url, id } from '../config/config';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

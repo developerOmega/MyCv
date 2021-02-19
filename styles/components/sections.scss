@@ -40,8 +40,11 @@
 .main {
   padding: 4rem 2rem;
   .section {
+    padding-top: 1rem;
     text-align: center;
     font-size: 18px;
+    line-height: 20pt;
+    word-spacing: 4pt;
   }
 
   .title, .desc{

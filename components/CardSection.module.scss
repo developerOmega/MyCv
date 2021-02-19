@@ -4,22 +4,31 @@
   display: grid;
   padding: 2rem;
   gap: 2rem;
-  max-width: 40rem;
+  max-width: 50rem;
   width: 100%;
   margin: auto;
   p{
     text-align: center;
   }
+  img {
+    max-width: 70%;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+  }
   & > div{
-    box-shadow: 1px 2px 5px rgba($black, .5);
-    -webkit-box-shadow: 1px 2px 5px rgba($black, .5);
-    -moz-box-shadow: 1px 2px 5px rgba($black, .5);
-    border-radius: 5px;
+    // box-shadow: 1px 2px 5px rgba($black, .5);
+    // -webkit-box-shadow: 1px 2px 5px rgba($black, .5);
+    // -moz-box-shadow: 1px 2px 5px rgba($black, .5);
+    // border-radius: 5px;
     
-
+    // width: 100% !important;
+    // display: block;
+    
     img{
       border-radius: 5px;
-      display: block;
+      // height: auto;
+      // object-fit: cover !important;
     }
   }
 }

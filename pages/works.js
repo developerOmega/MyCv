@@ -62,7 +62,7 @@ const Works = ( {user, projects, jobs, skills} ) => {
 
       <div className="main-work">
 
-        { resp ? <MenuResp jobs={getJobs} skills={getSkill} className="position-sticky" func={closeResp} /> : <></>}
+        { resp ? <MenuResp jobs={getJobs} skills={getSkill} className="position-fixed" func={closeResp} /> : <></>}
 
         <div className="card-1">
           { getProjects }

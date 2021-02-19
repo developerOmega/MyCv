@@ -37,7 +37,7 @@ const Project = ({project, skills, sections}) => {
         <div style={{ marginLeft: "2rem" }}>
           <Link href="/works" auto={true} target="_self">
             <Left width="15px" /> 
-            <p style={{ marginLeft: ".5rem" }}> Back </p>
+            <p style={{ marginLeft: ".5rem" }}> Salir </p>
           </Link>
         </div>
       </JustContent>

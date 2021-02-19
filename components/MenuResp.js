@@ -26,14 +26,14 @@ const MenuResp = ({ jobs, skills, className="", func= () => {return} }) => {
 
       <div>
         <div className={styles.title}>
-          Jobs
+          Experiencia
         </div>
         { jobs }
       </div>
 
       <div>
         <div className={styles.title}>
-          Skills
+          Habilidades
         </div>
         { skills }
       </div>

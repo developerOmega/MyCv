@@ -21,15 +21,15 @@ const NavUser = (props) => {
       <nav className="nav">
         
         <Link href="/">
-          <a className="option"> Hello </a>
+          <a className="option"> Hola </a>
         </Link>
 
         <Link href="/works">
-          <a className="option"> Work </a>
+          <a className="option"> Tabajo </a>
         </Link>
         
         <Link href="/contact">
-          <a className="option"> Contact </a>
+          <a className="option"> Contáctame </a>
         </Link>
 
       </nav>

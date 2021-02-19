@@ -70,14 +70,14 @@ const Works = ( {user, projects, jobs, skills} ) => {
 
         <div className="card-2">
           <div className="title">
-            Jobs
+            Experiencia
           </div>
           { getJobs }
         </div>
 
         <div className="card-3">
           <div className="title">
-            Skills
+            Habilidades
           </div>
           { getSkill }
         </div>

@@ -9,5 +9,4 @@ const Title = ({children, color="black"}) => {
   );
 }
 
-
 export default Title;

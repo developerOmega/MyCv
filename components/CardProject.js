@@ -40,10 +40,10 @@ const CardProject = ( {project} ) => {
       </div>
       <div className={ styleButtons }>
         <BtnLink href={`/projects/${project.id}`} >
-          More ...
+          Ver más ...
         </BtnLink>
         <Btn type="button" color="danger" onClick={closeOp}>
-          Exit
+          Salir
         </Btn>
       </div>
     </div>

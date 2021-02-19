@@ -6,7 +6,7 @@
   padding: 20px 0;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  height: 100vh;
+  height: 100%;
 
   bottom: 0;
 
@@ -31,18 +31,19 @@
 
 @keyframes openMenu {
   0% {
-    bottom: -100vh;
+    top: 100%;
   }
   100% {
-    bottom: 0vh;
+    top: 0%;
   }
 }
 
 @keyframes closeMenu {
   0% {
-    bottom: 0;
+    top: 0;
   }
   100% {
-    bottom: -100vh;
+    top: 100vh;
+    
   }
 }

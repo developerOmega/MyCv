@@ -6,6 +6,7 @@ const Title = ({children, color="black"}) => {
     <h2 className={styles.title + " " + color}> 
       {children}  
     </h2>
+    
   );
 }
 

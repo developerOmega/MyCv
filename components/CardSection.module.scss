@@ -15,20 +15,16 @@
     height: auto;
     object-fit: cover;
     margin: auto;
+    border-radius: 5px;
   }
-  & > div{
-    // box-shadow: 1px 2px 5px rgba($black, .5);
-    // -webkit-box-shadow: 1px 2px 5px rgba($black, .5);
-    // -moz-box-shadow: 1px 2px 5px rgba($black, .5);
-    // border-radius: 5px;
-    
-    // width: 100% !important;
-    // display: block;
-    
-    img{
-      border-radius: 5px;
-      // height: auto;
-      // object-fit: cover !important;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    max-width: 100%;
+    img {
+      max-width: 100%;
+      width: 100%;
     }
   }
 }

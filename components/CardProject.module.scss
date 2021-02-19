@@ -69,19 +69,45 @@
   .card {
     max-height: 100%;
     grid-template-columns: 1fr;
-    padding: 1rem;
-  }
+    padding: 0;
 
-  .grid{
-    grid-template-areas: "main-content" "image" ;
-  }
-
-  .gridOptions {
-    grid-template-areas: "main-content" "image"  "buttons";
+    box-shadow: 2px 2px 5px rgba($blue-third, .5);
+    -webkit-box-shadow: 1px 2px 5px rgba($blue-third, .5);
+    -moz-box-shadow: 1px 2px 5px rgba($blue-third, .5);
   }
 
   .imgContent {
-    padding: 1rem 0;
+    transition: ease .3s all;
+    padding-bottom: 1rem;
+    & > div img {
+      border-radius: 0;
+    }
+  }
+
+  .grid{
+    grid-template-areas: "image" "main-content" ;
+    .imgContent > div img {
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+  }
+
+  .gridOptions {
+    grid-template-areas: "image" "main-content"  "buttons";
+    .imgContent {
+      padding: 1rem;
+      & > div img{
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .mainContent, .buttonContent {
+    padding: 0 1rem 1rem 1rem;
+  } 
+
+  .buttonContent {
+    padding-bottom: 1rem;
   }
 
   .title {

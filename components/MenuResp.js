@@ -38,7 +38,8 @@ const MenuResp = ({ jobs, skills, className="", func= () => {return} }) => {
         { skills }
       </div>
     </div>
-  )
+  );
+
 }
 
 export default MenuResp;

@@ -25,7 +25,7 @@ const NavUser = (props) => {
         </Link>
 
         <Link href="/works">
-          <a className="option"> Tabajo </a>
+          <a className="option"> Trabajo </a>
         </Link>
         
         <Link href="/contact">

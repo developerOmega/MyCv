@@ -15,6 +15,7 @@ const Contacts = ({user}) => {
 
   return (
     <NavUser user={user}>
+      
       <section className="main">
 
         <Title> Contactame </Title>

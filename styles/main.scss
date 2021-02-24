@@ -46,6 +46,9 @@ footer.footer {
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   align-items: center;
   justify-items: center;
+  
+  position: relative;
+  z-index: 2;
 
   .info {
     .primary{
@@ -71,3 +74,4 @@ footer.footer {
 @import './components/nav.scss';
 @import './components/colors.scss';
 @import './components/position.scss';
+@import './components/effects.scss';

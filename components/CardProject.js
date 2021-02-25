@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
-import IMG from './tags/IMG';
-import Btn from './tags/Btn';
-import BtnLink from "./tags/BtnLink";
+import { Btn, BtnLink, IMG } from './tags';
 import styles from "./CardProject.module.scss";
 
 const CardProject = ( {project} ) => {

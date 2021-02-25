@@ -1,10 +1,5 @@
 import MainLayout from '../Layouts/MainLayout';
-import NavUser from '../components/NavUser';
-import CardProject from '../components/CardProject';
-import CardJob from '../components/CardJob';
-import CardSkill from '../components/CardSkill';
-import CardJobShow from '../components/CardJobShow';
-import MenuResp from '../components/MenuResp';
+import { NavUser, CardProject, CardJob, CardSkill, CardJobShow, MenuResp, } from '../components';
 import Menu from '../components/icons/Menu';
 import Btn from '../components/tags/Btn';
 import JustContent from '../components/flex/JustContent';

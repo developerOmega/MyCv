@@ -1,14 +1,14 @@
 import { useRouter } from 'next/router';
 import MainLayout from '../../Layouts/MainLayout';
-import { getReq } from '../../config/axios';
-import { url } from '../../config/config';
-
-import { Title, Link } from '../../components/tags';
 
 import JustContent from '../../components/flex/JustContent';
-import CardSkillProjects from '../../components/CardSkillProject';
-import CardSection from '../../components/CardSection';
 import Left from '../../components/icons/Left';
+
+import {CardSkillProject, CardSection} from '../../components';
+import { Title, Link } from '../../components/tags';
+
+import { getReq } from '../../config/axios';
+import { url } from '../../config/config';
 
 const Project = ({project, skills, sections}) => {
   const router = useRouter();
@@ -30,7 +30,7 @@ const Project = ({project, skills, sections}) => {
         <Link href={project.link} > {project.link} </Link>
       </JustContent>
 
-      <CardSkillProjects skills={skills} />
+      <CardSkillProject skills={skills} />
 
       { getSection }
 

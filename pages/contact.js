@@ -1,10 +1,8 @@
 import MainLayout from '../Layouts/MainLayout';
 import NavUser from '../components/NavUser';
 import { getReq } from '../config/axios';
-import Icon from '../components/tags/Icon';
 import TextFlex from '../components/flex/TextFlex';
-import Title from '../components/tags/Title';
-import Link from '../components/tags/Link';
+import {Icon, Title, Link} from '../components/tags';
 import { url, id } from '../config/config';
 
 const Contacts = ({user}) => {

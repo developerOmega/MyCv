@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import styles from './CardJobShow.module.scss';
 import JustContent from './flex/JustContent';
 import Close from './icons/Close';
-import Screen from "./tags/Screen";
-import Btn from './tags/Btn';
+import { Screen, Btn } from './tags';
 import moment from 'moment';
 
 const CardJobShow = ({view = () => {return}, job = {}}) => {

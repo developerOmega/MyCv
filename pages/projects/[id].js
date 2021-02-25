@@ -2,8 +2,9 @@ import { useRouter } from 'next/router';
 import MainLayout from '../../Layouts/MainLayout';
 import { getReq } from '../../config/axios';
 import { url } from '../../config/config';
-import Title from '../../components/tags/Title';
-import Link from '../../components/tags/Link';
+
+import { Title, Link } from '../../components/tags';
+
 import JustContent from '../../components/flex/JustContent';
 import CardSkillProjects from '../../components/CardSkillProject';
 import CardSection from '../../components/CardSection';

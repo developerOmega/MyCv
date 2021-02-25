@@ -1,7 +1,6 @@
 import React from 'react';
 import TextFlex from './flex/TextFlex';
-import Badge from './tags/Badge';
-import Icon from './tags/Icon';
+import { Badge, Icon } from './tags';
 
 const CardSkill = ( {skill} ) => {
 

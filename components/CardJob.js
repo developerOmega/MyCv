@@ -1,8 +1,6 @@
 import React from 'react';
 import TextFlex from './flex/TextFlex';
-import Badge from './tags/Badge';
-import Icon from './tags/Icon';
-import Btn from './tags/Btn';
+import { Badge, Icon, Btn } from './tags';
 
 const CardJob = ( {job = {}, func = () => {return} } ) => {
 

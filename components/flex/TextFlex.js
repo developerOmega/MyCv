@@ -9,6 +9,9 @@ const TextFlex = ( {children, justify = "none"} ) => {
     case "space-between":
       style += " " + styles.justifyContent;
       break;
+    case "center":
+      style += " " + styles.center;
+      break;
     default: 
       style = style;
   }

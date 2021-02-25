@@ -20,7 +20,7 @@ const Works = ( {user, projects, jobs, skills} ) => {
   const [resp, setResp] = useState(false);
 
   const viewJob = ( data ) => {
-    setJobInfo(true);
+    setJobInfo(true); // https://danielmendoza.herokuapp.com/
     setJob(data);
   }
 

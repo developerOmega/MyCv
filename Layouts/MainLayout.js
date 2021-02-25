@@ -1,14 +1,16 @@
 import React from 'react';
 import IMG from '../components/tags/IMG';
+import TextFlex from '../components/flex/TextFlex';
 
 const MainLayout = ( {children, user, project} ) => {
   return (
     <div className="init">
 
       <header className="header">
-        <div className="logo">
+        <TextFlex justify="center">
           MyCv
-        </div>
+        </TextFlex>
+        
       </header>
 
       <div className="container">

@@ -10,7 +10,11 @@ function getCookie(cname) {
     return cooArr[0] == cname;
   });
 
-  return data[0].split("=")[1];
+  if(data[0]) {
+    return data[0].split("=")[1];
+  }
+
+  return 0;
 } 
 
 
